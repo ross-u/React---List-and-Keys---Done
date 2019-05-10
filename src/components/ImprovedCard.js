@@ -7,8 +7,8 @@ const improvedCard = (props) => {
       <h2>{props.title}</h2>
       <p>Director: {props.director}</p>
 
-      <button onClick={props.clickToDelete}>Delete</button>
-      
+      <button className='btn-delete' onClick={props.clickToDelete}>Delete</button>
+
     </div>
   )
 };

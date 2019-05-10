@@ -1,6 +1,7 @@
 // src/App.js
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
+import './App.css'
 
 import listItems from './components/ListDemo';
 import MovieList from './components/MovieList';
@@ -14,12 +15,14 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar></Navbar>
+
+        <h1>List</h1>
         <ul>{ listItems }</ul>
 
-        <h2>Movie List</h2>
+        <h1>Movie List</h1>
         <MovieList></MovieList>
 
-        <h2>Dynamic Movie List</h2>
+        <h1>Dynamic Movie List</h1>
         <DynamicMovieList moviesArray={data}></DynamicMovieList>
       </div>
     );

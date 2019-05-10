@@ -13,7 +13,7 @@ const MovieList = () =>{
   return (
     <ul>
       { 
-        movies.map( (oneMovie) => <Card key={shortid.generate()} movie={oneMovie} /> ) 
+        movies.map( (oneMovie, index) => <Card key={shortid.generate()} movie={oneMovie} /> ) 
       }
     </ul>
   )
