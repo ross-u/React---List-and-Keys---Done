@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { Component } from 'react';
+import Navbar from './components/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import listItems from './components/ListDemo';
+import MovieList from './components/MovieList';
+import DynamicMovieList from './components/DynamicMovieList';
+
+import data from './data';
+
+class App extends Component {
+  
+  render() {
+    return (
+      <div className="App">
+        <Navbar></Navbar>
+        <ul>{ listItems }</ul>
+
+        <h2>Movie List</h2>
+        <MovieList></MovieList>
+
+        <h2>Dynamic Movie List</h2>
+        <DynamicMovieList moviesArray={data}></DynamicMovieList>
+      </div>
+    );
+  }
 }
 
 export default App;
