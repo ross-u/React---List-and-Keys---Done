@@ -1,7 +1,6 @@
 // src/components/MovieListDemo.js
 import React from 'react';
 import Card from './Card';
-import shortid from 'shortid';
 
 const movies = [
   { _id:"2143lkjgfw8", title: "Jurassic Park", director: "Steven Spielberg" },
